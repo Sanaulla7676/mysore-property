@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalendra Kogilavadi Properties Mysore | Your Dream Home, Our Trusted Service</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Jalendra Kogilavadi Properties Mysore - Your Dream Home, Our Trusted Service. Buy, Sell, or Explore Joint Development (JD) across Mysore with 100% legal clarity.">
+    <meta name="keywords" content="Properties in Mysore, Buy Plots Mysore, Villas Mysore, Farmland Mysore, Joint Development Mysore, JK Properties Mysore">
+    <meta name="author" content="Jalendra Kogilavadi Properties Mysore">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#102E52',
+                            900: '#0D2847',
+                            950: '#0A192F'
+                        },
+                        pageBg: '#F4F7FB',
+                        iconBg: '#EBF2FA'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F4F7FB;
+            color: #0A192F;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Effect for Search Bar */
+        .glass-search-bar {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Glassmorphism Effect for Header */
+        .glass-header {
+            background: rgba(244, 247, 251, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Custom Slider Styling */
+        .slider-track {
+            height: 4px;
+            background: #cbd5e1;
+            position: relative;
+        }
+        .slider-progress {
+            position: absolute;
+            height: 100%;
+            background: #102E52;
+            left: 0%;
+            right: 0%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F4F7FB;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #102E52;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- TOAST NOTIFICATION HUD -->
+    <div id="toast-hud" class="fixed bottom-8 right-8 z-[200] hidden bg-navy-950 text-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-3 text-xs font-bold uppercase tracking-wider border border-white/20">
+        <i class="fa-solid fa-sparkles text-amber-400 text-sm"></i>
+        <span id="toast-message">Notification message</span>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-header border-b border-gray-200/50 transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo with New Tagline -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-navy-900 text-white flex items-center justify-center font-extrabold text-base shadow-md shrink-0">
+                    JK
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="font-extrabold tracking-wider text-navy-950 text-sm sm:text-base uppercase">JALENDRA KOGILAVADI</span>
+                    <span class="font-extrabold text-[9px] tracking-widest text-navy-800 uppercase mt-0.5">PROPERTIES MYSORE</span>
+                    <!-- NEW TAGLINE -->
+                    <span class="text-[9px] font-semibold italic text-slate-500 tracking-normal mt-0.5 font-sans">"Your Dream Home, Our Trusted Service"</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden xl:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-slate-600">
+                <a href="#hero" class="text-navy-900 font-extrabold transition">Home</a>
+                <a href="#search-engine" class="hover:text-navy-900 transition">Listings</a>
+                <a href="#joint-dev" class="hover:text-navy-900 transition">Joint Dev (JD)</a>
+                <a href="#ai-valuation" class="hover:text-navy-900 transition">AI Valuation</a>
+                <a href="#property-ops" class="hover:text-navy-900 transition">Ops & Management</a>
+                <a href="#calculators" class="hover:text-navy-900 transition">Calculators</a>
+                <a href="#contact" class="hover:text-navy-900 transition">Contact</a>
+            </nav>
+
+            <!-- Actions & NRI Multi-Currency Switcher -->
+            <div class="hidden sm:flex items-center gap-4">
+                <div class="relative bg-white rounded-full px-3 py-1.5 border border-slate-200 text-xs font-bold text-navy-900 shadow-sm flex items-center gap-1.5">
+                    <i class="fa-solid fa-globe text-slate-400"></i>
+                    <select id="currency-select" onchange="changeCurrency()" class="bg-transparent focus:outline-none cursor-pointer">
+                        <option value="INR">INR (₹)</option>
+                        <option value="USD">USD ($)</option>
+                        <option value="AED">AED (د.إ)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="EUR">EUR (€)</option>
+                    </select>
+                </div>
+
+                <!-- Saved Portfolio / Wishlist Badge -->
+                <button onclick="scrollToWishlist()" class="relative w-9 h-9 rounded-full bg-iconBg flex items-center justify-center text-navy-900 hover:bg-navy-900 hover:text-white transition">
+                    <i class="fa-solid fa-heart text-xs"></i>
+                    <span id="wishlist-counter" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-navy-900 text-white text-[9px] font-bold flex items-center justify-center">0</span>
+                </button>
+
+                <!-- Comparison Counter Badge -->
+                <button onclick="toggleComparisonDrawer()" class="relative w-9 h-9 rounded-full bg-iconBg flex items-center justify-center text-navy-900 hover:bg-navy-900 hover:text-white transition">
+                    <i class="fa-solid fa-layer-group text-xs"></i>
+                    <span id="comparison-counter" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-600 text-white text-[9px] font-bold flex items-center justify-center hidden">0</span>
+                </button>
+
+                <!-- Get Started / WhatsApp Direct Pill Button -->
+                <a href="https://wa.me/919036074011" target="_blank" class="bg-navy-900 hover:bg-navy-800 text-white text-xs font-extrabold uppercase tracking-wider px-6 py-3 rounded-full transition shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    GET STARTED
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="xl:hidden text-navy-950 p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 text-xs font-bold uppercase tracking-wider">
+            <a href="#hero" onclick="toggleMobileMenu()" class="block text-navy-900">Home</a>
+            <a href="#search-engine" onclick="toggleMobileMenu()" class="block text-slate-600">Listings</a>
+            <a href="#joint-dev" onclick="toggleMobileMenu()" class="block text-slate-600">Joint Development (JD)</a>
+            <a href="#ai-valuation" onclick="toggleMobileMenu()" class="block text-slate-600">AI Valuation</a>
+            <a href="#property-ops" onclick="toggleMobileMenu()" class="block text-slate-600">Ops & Management</a>
+            <a href="#calculators" onclick="toggleMobileMenu()" class="block text-slate-600">Calculators</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-slate-600">Contact</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:9036074011" class="w-full text-center py-2.5 rounded-full bg-navy-900 text-white font-bold">Call: 9036074011</a>
+                <a href="https://wa.me/919036074011" target="_blank" class="w-full text-center py-2.5 rounded-full bg-emerald-600 text-white font-bold">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="relative pt-20 min-h-[660px] lg:min-h-[740px] flex items-end justify-center pb-12 overflow-hidden">
+        
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80" 
+                 alt="Luxury Modern Villa Mysore" 
+                 class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-black/30 to-black/40"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl w-full mx-auto px-6 flex flex-col justify-between h-full pt-16 lg:pt-24">
+            
+            <!-- Hero Text -->
+            <div class="max-w-3xl text-white mb-10 lg:mb-16">
+                <!-- TAGLINE IN HERO BADGE -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-bold uppercase tracking-wider mb-4">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Your Dream Home, Our Trusted Service • Properties Across Mysore
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight uppercase leading-[1.1] mb-4">
+                    FIND YOUR PERFECT<br>LIVING SPACE IN MYSORE
+                </h1>
+                <p class="text-sm sm:text-base text-gray-200 font-medium max-w-xl leading-relaxed">
+                    Discover exclusive MUDA plots, luxury villas, commercial sites & Joint Development deals with direct owner negotiations and transparent title guarantees.
+                </p>
+            </div>
+
+            <!-- Floating Glass Search Bar (Nestora Overlay) -->
+            <div class="glass-search-bar rounded-3xl lg:rounded-full p-4 lg:p-3 max-w-5xl mx-auto w-full">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+                    
+                    <!-- Location Field -->
+                    <div class="md:col-span-3">
+                        <label class="block text-[11px] font-bold text-gray-800 uppercase tracking-wider ml-4 mb-1">Location</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                <i class="fa-solid fa-location-dot text-xs"></i>
+                            </div>
+                            <select id="hero-loc" onchange="filterFromHero()" class="w-full bg-white text-slate-800 text-xs font-semibold rounded-full pl-9 pr-8 py-2.5 appearance-none shadow-sm focus:outline-none cursor-pointer">
+                                <option value="all">All Locations (Mysore)</option>
+                                <option value="Vijayanagar">Vijayanagar 4th Stage</option>
+                                <option value="Gokulam">Gokulam 3rd Stage</option>
+                                <option value="Jayalakshmipuram">Jayalakshmipuram</option>
+                                <option value="JP Nagar">JP Nagar</option>
+                                <option value="Chamundi Foothills">Chamundi Foothills</option>
+                                <option value="Bannur Road">Bannur Road Highway</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Type Field -->
+                    <div class="md:col-span-3">
+                        <label class="block text-[11px] font-bold text-gray-800 uppercase tracking-wider ml-4 mb-1">Property Type</label>
+                        <div class="relative">
+                            <select id="hero-type" onchange="filterFromHero()" class="w-full bg-white text-slate-800 text-xs font-semibold rounded-full px-4 py-2.5 appearance-none shadow-sm focus:outline-none cursor-pointer">
+                                <option value="all">All Types</option>
+                                <option value="plots">Residential Plots</option>
+                                <option value="villas">Modern Villas</option>
+                                <option value="commercial">Commercial Land</option>
+                                <option value="farmland">Agro Farmland</option>
+                                <option value="jd">Joint Dev (JD)</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Range Field -->
+                    <div class="md:col-span-4 px-2">
+                        <div class="flex justify-between items-center text-[11px] font-bold text-gray-800 uppercase tracking-wider mb-1">
+                            <span>Price Cap:</span>
+                            <span id="hero-price-val" class="text-navy-900 font-extrabold">₹ 10+ Cr</span>
+                        </div>
+                        <div class="py-2">
+                            <input type="range" id="hero-price" min="50" max="1000" step="25" value="1000" oninput="filterFromHero()" class="w-full accent-navy-900">
+                        </div>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="md:col-span-2">
+                        <button onclick="scrollToSearch()" class="w-full bg-navy-900 hover:bg-navy-800 text-white text-xs font-extrabold uppercase tracking-wider py-3 px-6 rounded-full transition shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                            SEARCH
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FEATURED PROPERTIES ================= -->
+    <section id="search-engine" class="py-20 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navy-950 uppercase">
+                    FEATURED PROPERTIES IN MYSORE
+                </h2>
+                <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Direct Owner Negotiations • Verified MUDA Titles</p>
+            </div>
+
+            <!-- View Layout Mode & Filters -->
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="bg-white rounded-full p-1 border border-slate-200 shadow-sm flex">
+                    <button onclick="setViewMode('grid')" id="btn-grid" class="px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white">Grid</button>
+                    <button onclick="setViewMode('split')" id="btn-split" class="px-4 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-navy-900">Split Map</button>
+                </div>
+
+                <div class="relative bg-white rounded-full px-4 py-2 border border-slate-200 text-xs font-bold text-slate-700 shadow-sm">
+                    <input type="text" id="keyword-search" onkeyup="renderProperties()" placeholder="Search keyword..." class="bg-transparent focus:outline-none w-32">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Display Grid / Map Layout -->
+        <div id="display-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Dynamically Rendered Property Cards -->
+        </div>
+
+        <!-- Vector Map Canvas Overlay -->
+        <div id="vector-map-view" class="hidden bg-white rounded-[24px] p-6 border border-slate-200 shadow-lg h-[550px] relative overflow-hidden flex flex-col justify-between">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-compass text-navy-900 text-base animate-spin" style="animation-duration: 25s;"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider text-navy-950">Mysuru Masterplan Coordinates Grid</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-navy-800">12.3118° N, 76.6529° E</span>
+            </div>
+
+            <div class="relative flex-1 w-full my-4 bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center">
+                <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+                <div id="map-pins-layer" class="relative w-full h-full">
+                    <!-- Dynamic Interactive Pins -->
+                </div>
+            </div>
+
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex justify-between">
+                <span>MUDA & Layout Sector Pins</span>
+                <span class="text-navy-900">Click Pin to Inspect Property</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= JOINT DEVELOPMENT (JD) STORYTELLING ================= -->
+    <section id="joint-dev" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="bg-navy-900 rounded-[32px] p-8 lg:p-14 text-white relative overflow-hidden shadow-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold uppercase tracking-wider text-emerald-400">
+                        Developer Partnership Hub
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight leading-tight">
+                        UNLOCK LAND POTENTIAL VIA JOINT DEVELOPMENT (JD)
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm font-medium leading-relaxed">
+                        Own prime land in Mysore? Partner with accredited builders to retain up to 50% - 60% of constructed apartments or commercial revenue without investing construction capital.
+                    </p>
+                    <a href="https://wa.me/919480838188?text=I%20have%20land%20in%20Mysore%20and%20want%20to%20explore%20Joint%20Development%20(JD)." target="_blank" class="inline-flex items-center gap-2 bg-white text-navy-950 font-extrabold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-slate-100 transition shadow-lg">
+                        Submit Land for JD Assessment
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-2">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white text-sm font-bold">01</div>
+                        <h3 class="font-extrabold text-sm uppercase tracking-wide">Zero Capital Needed</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed font-medium">Build without loans. Developer funds 100% of construction costs.</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-2">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white text-sm font-bold">02</div>
+                        <h3 class="font-extrabold text-sm uppercase tracking-wide">Verified Builders</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed font-medium">Strict RERA, MUDA, and financial solvency vetting for developers.</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-2">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white text-sm font-bold">03</div>
+                        <h3 class="font-extrabold text-sm uppercase tracking-wide">Ironclad Legal</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed font-medium">Clear sharing clauses, time-bound completion penalties & guarantees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= 2026 AI VALUATION & NEIGHBOURHOOD INSIGHTS ================= -->
+    <section id="ai-valuation" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="text-center mb-12">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-iconBg text-navy-900 text-xs font-bold uppercase tracking-wider mb-2">
+                2026 AI Real Estate Intelligence
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navy-950 uppercase">
+                AI PROPERTY VALUATION & NEIGHBOURHOOD INSIGHTS
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- AI Valuation Predictor -->
+            <div class="lg:col-span-6 bg-white rounded-[24px] p-8 border border-slate-100 shadow-sm flex flex-col justify-between">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-iconBg text-navy-900 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-navy-950 text-base uppercase">AI Market Valuation & Rent Yield Predictor</h3>
+                            <p class="text-xs text-slate-500 font-medium">Instant algorithm estimate based on 2026 Mysore guidance values.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Select Locality</label>
+                            <select id="ai-loc" onchange="runAIValuation()" class="w-full bg-pageBg text-xs font-bold text-navy-950 px-4 py-3 rounded-full border border-slate-200 focus:outline-none">
+                                <option value="3500">Vijayanagar 4th Stage (₹3,500/Sq.Ft)</option>
+                                <option value="8500">Gokulam 3rd Stage (₹8,500/Sq.Ft)</option>
+                                <option value="10200">Jayalakshmipuram (₹10,200/Sq.Ft)</option>
+                                <option value="4200">JP Nagar Sector 2 (₹4,200/Sq.Ft)</option>
+                                <option value="2500">Bannur Road Outer (₹2,500/Sq.Ft)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                                <span>Plot / Built Extent:</span>
+                                <span id="ai-sqft-val" class="text-navy-900 font-extrabold">1,200 Sq.Ft</span>
+                            </div>
+                            <input type="range" id="ai-sqft" min="600" max="10000" step="300" value="1200" oninput="runAIValuation()" class="w-full accent-navy-900">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100 grid grid-cols-2 gap-4 bg-iconBg/50 rounded-2xl p-4">
+                    <div>
+                        <span class="block text-[10px] font-bold uppercase tracking-wider text-slate-500">Predicted Property Value</span>
+                        <span id="ai-res-val" class="text-lg font-extrabold text-navy-900">₹ 42,00,000</span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] font-bold uppercase tracking-wider text-slate-500">Est. Monthly Rental Yield</span>
+                        <span id="ai-res-rent" class="text-lg font-extrabold text-emerald-600">₹ 17,500 / mo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hyper-Local Neighbourhood & ESG Scorecard -->
+            <div class="lg:col-span-6 bg-white rounded-[24px] p-8 border border-slate-100 shadow-sm flex flex-col justify-between">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-iconBg text-navy-900 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-tree-city"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-navy-950 text-base uppercase">Hyper-Local Neighbourhood & ESG Score</h3>
+                            <p class="text-xs text-slate-500 font-medium">Live environmental, air quality, & infrastructure analytics.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-pageBg p-4 rounded-2xl border border-slate-200/60">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Air Quality Index (AQI)</span>
+                            <span class="text-base font-extrabold text-emerald-600">42 - Good (Clean)</span>
+                        </div>
+                        <div class="bg-pageBg p-4 rounded-2xl border border-slate-200/60">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Ring Road Connectivity</span>
+                            <span class="text-base font-extrabold text-navy-900">9.8 / 10</span>
+                        </div>
+                        <div class="bg-pageBg p-4 rounded-2xl border border-slate-200/60">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Safety & Patrol Score</span>
+                            <span class="text-base font-extrabold text-navy-900">9.5 / 10</span>
+                        </div>
+                        <div class="bg-pageBg p-4 rounded-2xl border border-slate-200/60">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">School & Hospital Radius</span>
+                            <span class="text-base font-extrabold text-navy-900">&lt; 1.5 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-bold uppercase tracking-wider">
+                    <span class="text-slate-500">Overall Mysore Livability Index:</span>
+                    <span class="text-navy-900 font-extrabold">9.6 / 10 (Tier-2 Winner)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= PROPERTY OPERATIONS & MANAGEMENT DESK ================= -->
+    <section id="property-ops" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navy-950 uppercase">
+                PROPERTY MANAGEMENT & OPERATIONS DESK
+            </h2>
+            <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">For Property Owners, Landlords & Tenants</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Smart Tenant Vetting Scorecard -->
+            <div class="bg-white rounded-[22px] p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-full bg-iconBg text-navy-900 flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-950 text-sm uppercase tracking-wide">Smart Tenant Vetting Scorecard</h3>
+                    <p class="text-xs text-slate-500 font-medium leading-relaxed">
+                        Automated identity verification, background check, & financial solvency scorecard for owners leasing villas or flats.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-slate-100 mt-4">
+                    <button onclick="showToast('Tenant Vetting Suite Active. Upload Tenant ID in Client Desk.')" class="w-full py-2.5 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-wider hover:bg-navy-800">
+                        Run Vetting Score
+                    </button>
+                </div>
+            </div>
+
+            <!-- Live Maintenance Desk Tracker -->
+            <div class="bg-white rounded-[22px] p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-full bg-iconBg text-navy-900 flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-950 text-sm uppercase tracking-wide">Live Maintenance Desk Tracker</h3>
+                    <p class="text-xs text-slate-500 font-medium leading-relaxed">
+                        Log & track property repairs, solar grid tuning, plumbing, or security audits with real-time status updates.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-slate-100 mt-4">
+                    <button onclick="showToast('Maintenance Ticket Desk Triggered. Agent assigned.')" class="w-full py-2.5 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-wider hover:bg-navy-800">
+                        Log Maintenance Ticket
+                    </button>
+                </div>
+            </div>
+
+            <!-- IoT Smart Home & Energy Dashboard -->
+            <div class="bg-white rounded-[22px] p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-full bg-iconBg text-navy-900 flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-950 text-sm uppercase tracking-wide">IoT & ESG Smart Home Monitor</h3>
+                    <p class="text-xs text-slate-500 font-medium leading-relaxed">
+                        Monitor solar power yield, EV charger status, & smart lock access remotely via owner portal.
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-slate-100 mt-4">
+                    <button onclick="showToast('IoT Gateway Connected: Solar Output 14.2 kWh/day')" class="w-full py-2.5 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-wider hover:bg-navy-800">
+                        Check IoT Meters
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CALCULATORS SUITE ================= -->
+    <section id="calculators" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navy-950 uppercase">
+                FINANCIAL CALCULATORS & YIELD SUITE
+            </h2>
+        </div>
+
+        <div class="bg-white rounded-[28px] p-8 lg:p-12 border border-slate-200/80 shadow-md space-y-10">
+            <!-- Tabs Bar -->
+            <div class="flex flex-wrap gap-2 border-b border-slate-100 pb-4">
+                <button onclick="setCalcTab('jd')" id="calc-tab-jd" class="calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-navy-900 text-white">JD Revenue Share</button>
+                <button onclick="setCalcTab('emi')" id="calc-tab-emi" class="calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-iconBg text-slate-700 hover:text-navy-900">EMI Simulator</button>
+                <button onclick="setCalcTab('stamp')" id="calc-tab-stamp" class="calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-iconBg text-slate-700 hover:text-navy-900">Karnataka Stamp Duty</button>
+                <button onclick="setCalcTab('frac')" id="calc-tab-frac" class="calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-iconBg text-slate-700 hover:text-navy-900">Fractional Yield (2026)</button>
+            </div>
+
+            <!-- Tab 1: JD Share Calculator -->
+            <div id="calc-panel-jd" class="calc-panel grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1">
+                            <span>Land Extent:</span>
+                            <span id="jd-extent-val" class="text-navy-900 font-extrabold">10,000 Sq.Ft</span>
+                        </div>
+                        <input type="range" id="jd-extent" min="2400" max="50000" step="600" value="10000" oninput="runCalculations()" class="w-full accent-navy-900">
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1">
+                            <span>Expected MUDA FSI Index:</span>
+                            <span id="jd-fsi-val" class="text-navy-900 font-extrabold">2.5</span>
+                        </div>
+                        <input type="range" id="jd-fsi" min="1.5" max="3.25" step="0.25" value="2.5" oninput="runCalculations()" class="w-full accent-navy-900">
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1">
+                            <span>Sale Price (₹/Sq.Ft):</span>
+                            <span id="jd-price-val" class="text-navy-900 font-extrabold">₹ 6,500</span>
+                        </div>
+                        <input type="range" id="jd-price" min="3500" max="15000" step="500" value="6500" oninput="runCalculations()" class="w-full accent-navy-900">
+                    </div>
+                </div>
+
+                <div class="bg-navy-900 text-white p-8 rounded-[22px] space-y-4">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">ESTIMATED LANDOWNER JD REVENUE</span>
+                    <h3 id="jd-res-gross" class="text-3xl sm:text-4xl font-extrabold text-amber-400">₹ 16.25 Crores</h3>
+                    <p class="text-xs text-slate-300 font-medium leading-relaxed">
+                        Based on constructed built area of <span id="jd-res-built" class="text-white font-bold">25,000 Sq.Ft</span> at 50:50 sharing ratio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tab 2: EMI Calculator -->
+            <div id="calc-panel-emi" class="calc-panel hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1">
+                            <span>Loan Amount:</span>
+                            <span id="emi-principal-val" class="text-navy-900 font-extrabold">₹ 1.00 Crore</span>
+                        </div>
+                        <input type="range" id="emi-principal" min="2000000" max="50000000" step="1000000" value="10000000" oninput="runCalculations()" class="w-full accent-navy-900">
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1">
+                            <span>Tenure:</span>
+                            <span id="emi-years-val" class="text-navy-900 font-extrabold">20 Years</span>
+                        </div>
+                        <input type="range" id="emi-years" min="5" max="30" step="1" value="20" oninput="runCalculations()" class="w-full accent-navy-900">
+                    </div>
+                </div>
+
+                <div class="bg-navy-900 text-white p-8 rounded-[22px] space-y-4">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">ESTIMATED MONTHLY EMI</span>
+                    <h3 id="emi-res-monthly" class="text-3xl sm:text-4xl font-extrabold text-emerald-400">₹ 86,782 / Mo</h3>
+                    <p class="text-xs text-slate-300 font-medium">Interest Payable: <span id="emi-res-interest" class="text-white font-bold">₹ 1,08,27,680</span></p>
+                </div>
+            </div>
+
+            <!-- Tab 3: Stamp Duty -->
+            <div id="calc-panel-stamp" class="calc-panel hidden space-y-6">
+                <h3 class="font-extrabold text-navy-950 text-base uppercase">Karnataka Stamp Duty & Registration Charges</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold">
+                    <div class="bg-pageBg p-5 rounded-2xl border border-slate-200">
+                        <span class="text-slate-500 uppercase block mb-1">Stamp Duty</span>
+                        <span class="text-xl font-extrabold text-navy-900">5.60%</span>
+                    </div>
+                    <div class="bg-pageBg p-5 rounded-2xl border border-slate-200">
+                        <span class="text-slate-500 uppercase block mb-1">Registration Charge</span>
+                        <span class="text-xl font-extrabold text-navy-900">1.00%</span>
+                    </div>
+                    <div class="bg-pageBg p-5 rounded-2xl border border-slate-200">
+                        <span class="text-slate-500 uppercase block mb-1">Total Govt Tax</span>
+                        <span class="text-xl font-extrabold text-emerald-600">6.60%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fractional Tokenized Yield Calculator -->
+            <div id="calc-panel-frac" class="calc-panel hidden space-y-6">
+                <h3 class="font-extrabold text-navy-950 text-base uppercase">Fractional Ownership & Tokenized Commercial Yield</h3>
+                <p class="text-xs text-slate-500 font-medium">Invest in fraction of high-yield commercial sites on Vijayanagar Ring Road starting at ₹ 5 Lakhs.</p>
+                <div class="bg-navy-900 text-white p-6 rounded-2xl grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase text-slate-400 block">Min Fraction Share</span>
+                        <span class="text-lg font-extrabold text-amber-400">₹ 5,00,000</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold uppercase text-slate-400 block">Target Rental Yield</span>
+                        <span class="text-lg font-extrabold text-emerald-400">8.8% p.a.</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold uppercase text-slate-400 block">Est. 5-Yr IRR</span>
+                        <span class="text-lg font-extrabold text-white">16.4%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-navy-950 uppercase">
+                WHY CHOOSE US
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-iconBg flex items-center justify-center text-navy-900 text-xl shadow-inner mb-4">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h3 class="font-extrabold text-navy-950 text-xs uppercase tracking-wider mb-2">PREMIUM LISTINGS</h3>
+                <p class="text-xs text-slate-500 leading-relaxed font-medium max-w-xs">Curated exclusive luxury homes and sophisticated properties across Mysore.</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-iconBg flex items-center justify-center text-navy-900 text-xl shadow-inner mb-4">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3 class="font-extrabold text-navy-950 text-xs uppercase tracking-wider mb-2">EXPERT GUIDANCE</h3>
+                <p class="text-xs text-slate-500 leading-relaxed font-medium max-w-xs">Direct face-to-face owner negotiations with Jalendra Kogilavadi team.</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-iconBg flex items-center justify-center text-navy-900 text-xl shadow-inner mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="font-extrabold text-navy-950 text-xs uppercase tracking-wider mb-2">MARKET ANALYTICS</h3>
+                <p class="text-xs text-slate-500 leading-relaxed font-medium max-w-xs">AI-driven market valuation and yield forecasting tools.</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-iconBg flex items-center justify-center text-navy-900 text-xl shadow-inner mb-4">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-extrabold text-navy-950 text-xs uppercase tracking-wider mb-2">SECURE TRANSACTIONS</h3>
+                <p class="text-xs text-slate-500 leading-relaxed font-medium max-w-xs">100% legal title verification, EC checks, and document vault security.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT & SITE VISIT SCHEDULER ================= -->
+    <section id="contact" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div class="bg-white rounded-[28px] p-8 lg:p-12 border border-slate-200/80 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-5 space-y-6">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950 uppercase tracking-tight">
+                        INITIATE PRIVATE CONSULTATION
+                    </h2>
+                    <!-- TAGLINE REINFORCEMENT -->
+                    <p class="text-xs font-bold italic text-navy-800">"Your Dream Home, Our Trusted Service"</p>
+                    <p class="text-xs text-slate-500 font-medium leading-relaxed">
+                        Schedule a direct owner meeting or book a private site visit in Mysore.
+                    </p>
+
+                    <div class="space-y-4 text-xs font-bold text-navy-900">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-iconBg flex items-center justify-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] text-slate-400 uppercase">Direct Phones</span>
+                                <a href="tel:9036074011" class="hover:underline">9036074011</a> / <a href="tel:9480838188" class="hover:underline">9480838188</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-iconBg flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] text-slate-400 uppercase">Email Desk</span>
+                                <a href="mailto:jkpropertiesmysore@gmail.com" class="hover:underline">jkpropertiesmysore@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" id="c-name" required placeholder="Your Full Name" class="w-full bg-pageBg text-xs font-bold text-navy-950 px-5 py-3.5 rounded-full border border-slate-200 focus:outline-none">
+                            <input type="tel" id="c-phone" required placeholder="Mobile / WhatsApp Number" class="w-full bg-pageBg text-xs font-bold text-navy-950 px-5 py-3.5 rounded-full border border-slate-200 focus:outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase text-slate-500 mb-1 ml-3">Preferred Site Visit Date</label>
+                                <input type="date" id="c-date" class="w-full bg-pageBg text-xs font-bold text-navy-950 px-5 py-3 rounded-full border border-slate-200 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase text-slate-500 mb-1 ml-3">Requirement Type</label>
+                                <select id="c-req" class="w-full bg-pageBg text-xs font-bold text-navy-950 px-5 py-3 rounded-full border border-slate-200 focus:outline-none">
+                                    <option>Buy Plot / Villa</option>
+                                    <option>Sell Property</option>
+                                    <option>Joint Development (JD)</option>
+                                    <option>Guided Video Walkthrough</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <textarea id="c-notes" rows="3" placeholder="Notes / Locality preference..." class="w-full bg-pageBg text-xs font-bold text-navy-950 px-5 py-3.5 rounded-3xl border border-slate-200 focus:outline-none"></textarea>
+
+                        <button type="submit" class="w-full py-4 rounded-full bg-navy-900 text-white text-xs font-extrabold uppercase tracking-wider hover:bg-navy-800 transition shadow-md">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-navy-950 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-b border-white/10 pb-8 mb-8 text-xs font-medium">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-white text-navy-950 font-extrabold flex items-center justify-center">JK</div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold uppercase tracking-wider text-sm">JALENDRA KOGILAVADI PROPERTIES MYSORE</span>
+                    <!-- TAGLINE IN FOOTER -->
+                    <span class="text-[10px] text-slate-400 font-semibold italic">"Your Dream Home, Our Trusted Service"</span>
+                </div>
+            </div>
+            <div class="flex gap-6 text-slate-400 font-bold uppercase">
+                <a href="#hero" class="hover:text-white">Home</a>
+                <a href="#search-engine" class="hover:text-white">Listings</a>
+                <a href="#joint-dev" class="hover:text-white">JD Hub</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto text-center text-xs text-slate-500 font-medium">
+            &copy; 2026 Jalendra Kogilavadi Properties Mysore. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- ================= MODALS & DRAWERS ================= -->
+
+    <!-- PROPERTY SHOWCASE MODAL -->
+    <div id="showcase-modal" class="fixed inset-0 z-[120] hidden bg-black/70 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-[28px] max-w-4xl w-full p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto relative shadow-2xl">
+            <button onclick="closeModal('showcase-modal')" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-iconBg flex items-center justify-center text-navy-900 font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div>
+                <span id="m-approval" class="text-[10px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">MUDA Approved</span>
+                <h2 id="m-title" class="text-2xl font-extrabold text-navy-950 uppercase mt-2">Title</h2>
+                <p id="m-loc" class="text-xs text-slate-500 font-semibold uppercase">Location</p>
+            </div>
+
+            <!-- 2D / 3D Floor Plan & Media Switcher -->
+            <div class="space-y-3">
+                <div class="flex gap-2">
+                    <button onclick="switchMediaTab('photo')" id="mtab-photo" class="px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white">Photos</button>
+                    <button onclick="switchMediaTab('floor')" id="mtab-floor" class="px-4 py-1.5 rounded-full text-xs font-bold bg-iconBg text-navy-900">3D Floor Plan</button>
+                </div>
+
+                <div id="mmedia-photo" class="h-64 sm:h-80 rounded-2xl overflow-hidden">
+                    <img id="m-img" src="" class="w-full h-full object-cover">
+                </div>
+
+                <div id="mmedia-floor" class="hidden h-64 sm:h-80 rounded-2xl bg-slate-900 flex flex-col items-center justify-center text-white space-y-3 p-6 text-center">
+                    <i class="fa-solid fa-cube text-3xl text-amber-400"></i>
+                    <h4 class="font-bold text-sm uppercase">Interactive 3D Architectural Layout</h4>
+                    <p class="text-xs text-slate-400">East-facing structural layout with setback metrics and MUDA clearance footprint.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 bg-pageBg p-4 rounded-2xl text-center text-xs font-bold">
+                <div>
+                    <span class="text-slate-400 block text-[10px] uppercase">Price</span>
+                    <span id="m-price" class="text-navy-900 text-base">₹ 0</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block text-[10px] uppercase">Dimension</span>
+                    <span id="m-dim" class="text-navy-900 text-base">0x0</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block text-[10px] uppercase">Area</span>
+                    <span id="m-area" class="text-navy-900 text-base">0 Sq.Ft</span>
+                </div>
+            </div>
+
+            <p id="m-desc" class="text-xs text-slate-600 leading-relaxed font-medium">Description text...</p>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a id="m-wa" href="#" target="_blank" class="flex-1 py-3 rounded-full bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider text-center hover:bg-emerald-700">
+                    Meeting Owner on WhatsApp
+                </a>
+                <button onclick="openVaultModal()" class="px-6 py-3 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-vault mr-1"></i> Legal Vault
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ENCRYPTED LEGAL TITLE & DOCUMENT VAULT MODAL -->
+    <div id="vault-modal" class="fixed inset-0 z-[130] hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white rounded-[28px] max-w-lg w-full p-6 space-y-5 relative shadow-2xl">
+            <button onclick="closeModal('vault-modal')" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-iconBg flex items-center justify-center text-navy-900 font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-shield-cat"></i>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-navy-950 text-base uppercase">Encrypted Legal Document Vault</h3>
+                    <p class="text-xs text-slate-500 font-medium">Verified Mysuru Sub-Registrar & MUDA Clearances</p>
+                </div>
+            </div>
+
+            <div class="space-y-2 text-xs font-bold text-navy-900">
+                <div class="flex justify-between items-center bg-pageBg p-3 rounded-xl">
+                    <span>MUDA Layout Approval Certificate</span>
+                    <span class="text-emerald-600"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                </div>
+                <div class="flex justify-between items-center bg-pageBg p-3 rounded-xl">
+                    <span>15-Year Encumbrance Certificate (EC)</span>
+                    <span class="text-emerald-600"><i class="fa-solid fa-check-circle"></i> Clear</span>
+                </div>
+                <div class="flex justify-between items-center bg-pageBg p-3 rounded-xl">
+                    <span>Revenue Conversion (A-Katha)</span>
+                    <span class="text-emerald-600"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                </div>
+            </div>
+
+            <button onclick="showToast('Request sent. Sub-registrar verification copy unlocked.')" class="w-full py-3 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-wider">
+                Download Title Audit Pack
+            </button>
+        </div>
+    </div>
+
+
+    <!-- COMPARISON MATRIX DRAWER -->
+    <div id="comparison-drawer" class="fixed inset-x-0 bottom-0 z-[110] hidden bg-white border-t border-slate-200 p-6 shadow-2xl max-h-[75vh] overflow-y-auto">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 class="font-extrabold text-navy-950 text-base uppercase">Property Comparison Matrix</h3>
+                <button onclick="toggleComparisonDrawer()" class="text-slate-500 font-bold"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <div id="comparison-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Dynamically filled by JS -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COMPLETE JAVASCRIPT ENGINE -->
+    <script>
+        // MASTER PROPERTIES DATA
+        const PROPERTIES_DATA = [
+            {
+                id: "prop-1",
+                title: "MODERN VILLA AT CHAMUNDI FOOTHILLS",
+                location: "Chamundi Hill Foothills",
+                locality: "Chamundi Foothills",
+                category: "villas",
+                priceINR: 48500000,
+                priceDisplay: "₹ 4.85 Cr",
+                dimension: "50 x 80 Ft",
+                beds: 5, baths: 4, sqft: 4000,
+                approval: "MUDA Approved",
+                description: "Luxury modern villa with solar automation, splash pool, & uninterrupted views of Chamundi Hill.",
+                image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "prop-2",
+                title: "COMMERCIAL JOINT-DEV CORNER SITE",
+                location: "Vijayanagar 4th Stage",
+                locality: "Vijayanagar",
+                category: "jd",
+                priceINR: 85000000,
+                priceDisplay: "₹ 8.50 Cr",
+                dimension: "100 x 120 Ft",
+                beds: 0, baths: 0, sqft: 12000,
+                approval: "MUDA Approved",
+                description: "High FSI commercial land right on Ring Road intersection. Ideal for Joint Development (50:50 ratio).",
+                image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "prop-3",
+                title: "JAYALAKSHMIPURAM HERITAGE PLOT",
+                location: "Jayalakshmipuram",
+                locality: "Jayalakshmipuram",
+                category: "plots",
+                priceINR: 24000000,
+                priceDisplay: "₹ 2.40 Cr",
+                dimension: "40 x 60 Ft",
+                beds: 0, baths: 0, sqft: 2400,
+                approval: "MUDA Approved",
+                description: "Prime East-facing residential site in Mysuru's elite central enclave with tree-lined avenues.",
+                image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "prop-4",
+                title: "SANDALWOOD ORGANIC AGRO ESTATE",
+                location: "Bannur Road Highway",
+                locality: "Bannur Road",
+                category: "farmland",
+                priceINR: 19500000,
+                priceDisplay: "₹ 1.95 Cr",
+                dimension: "2.5 Acres",
+                beds: 2, baths: 2, sqft: 108900,
+                approval: "Clear Title Revenue",
+                description: "Fully fenced farmland with 120 registered Sandalwood trees, borewell, & timber farmhouse.",
+                image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "prop-5",
+                title: "GOKULAM WELLNESS COMMERCIAL LAND",
+                location: "Gokulam 3rd Stage",
+                locality: "Gokulam",
+                category: "commercial",
+                priceINR: 52000000,
+                priceDisplay: "₹ 5.20 Cr",
+                dimension: "60 x 90 Ft",
+                beds: 0, baths: 0, sqft: 5400,
+                approval: "MUDA Approved",
+                description: "Located in global Yoga hub. Ideal for luxury wellness retreat or expat boutique apartments.",
+                image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: "prop-6",
+                title: "JP NAGAR HERITAGE VILLA PLOT",
+                location: "JP Nagar Sector 2",
+                locality: "JP Nagar",
+                category: "plots",
+                priceINR: 11500000,
+                priceDisplay: "₹ 1.15 Cr",
+                dimension: "30 x 50 Ft",
+                beds: 0, baths: 0, sqft: 1500,
+                approval: "MUDA Approved",
+                description: "Ready for immediate construction. East-facing plot in established luxury residential sector.",
+                image: "https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=800&q=80"
+            }
+        ];
+
+        // APP STATE
+        let currentCurrency = 'INR';
+        let viewMode = 'grid';
+        let wishlist = [];
+        let comparisonList = [];
+        let activeModalPropId = null;
+
+        const CURRENCY_RATES = {
+            INR: { symbol: '₹', rate: 1, divisor: 10000000, suffix: ' Cr' },
+            USD: { symbol: '$', rate: 0.012, divisor: 1000, suffix: 'K' },
+            AED: { symbol: 'AED ', rate: 0.044, divisor: 1000, suffix: 'K' },
+            GBP: { symbol: '£', rate: 0.0094, divisor: 1000, suffix: 'K' },
+            EUR: { symbol: '€', rate: 0.011, divisor: 1000, suffix: 'K' }
+        };
+
+        function formatCurrency(priceINR) {
+            const curr = CURRENCY_RATES[currentCurrency];
+            if(currentCurrency === 'INR') {
+                return `₹ ${(priceINR / 10000000).toFixed(2)} Cr`;
+            } else {
+                const converted = priceINR * curr.rate;
+                return `${curr.symbol}${Math.round(converted / curr.divisor).toLocaleString()}${curr.suffix}`;
+            }
+        }
+
+        function changeCurrency() {
+            currentCurrency = document.getElementById('currency-select').value;
+            renderProperties();
+            showToast(`Currency changed to ${currentCurrency}`);
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast-hud');
+            document.getElementById('toast-message').innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => { toast.classList.add('hidden'); }, 3000);
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function filterFromHero() {
+            renderProperties();
+        }
+
+        function scrollToSearch() {
+            document.getElementById('search-engine').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function setViewMode(mode) {
+            viewMode = mode;
+            const btnGrid = document.getElementById('btn-grid');
+            const btnSplit = document.getElementById('btn-split');
+            const gridView = document.getElementById('display-grid-container');
+            const mapView = document.getElementById('vector-map-view');
+
+            if(mode === 'grid') {
+                btnGrid.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white";
+                btnSplit.className = "px-4 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-navy-900";
+                gridView.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6";
+                mapView.classList.add('hidden');
+            } else {
+                btnSplit.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white";
+                btnGrid.className = "px-4 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-navy-900";
+                gridView.className = "grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8";
+                mapView.classList.remove('hidden');
+            }
+        }
+
+        function renderProperties() {
+            const loc = document.getElementById('hero-loc').value;
+            const type = document.getElementById('hero-type').value;
+            const maxPriceVal = parseInt(document.getElementById('hero-price').value);
+            const query = document.getElementById('keyword-search').value.toLowerCase();
+
+            document.getElementById('hero-price-val').innerText = maxPriceVal >= 1000 ? '₹ 10+ Cr' : `₹ ${maxPriceVal} Lakhs`;
+
+            const filtered = PROPERTIES_DATA.filter(p => {
+                const matchLoc = loc === 'all' || p.location.includes(loc);
+                const matchType = type === 'all' || p.category === type;
+                const matchPrice = (p.priceINR / 100000) <= (maxPriceVal * 10);
+                const matchKeyword = p.title.toLowerCase().includes(query) || p.location.toLowerCase().includes(query);
+                return matchLoc && matchType && matchPrice && matchKeyword;
+            });
+
+            const grid = document.getElementById('display-grid-container');
+            grid.innerHTML = '';
+
+            filtered.forEach(p => {
+                const isSaved = wishlist.includes(p.id);
+                const isCompared = comparisonList.includes(p.id);
+
+                grid.innerHTML += `
+                <div class="bg-white rounded-[22px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden p-3 pb-0 relative">
+                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover rounded-[16px]">
+                            <span class="absolute top-5 left-5 bg-navy-950/80 backdrop-blur-md text-emerald-400 text-[9px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full">${p.approval}</span>
+                            
+                            <div class="absolute top-5 right-5 flex gap-1.5">
+                                <button onclick="toggleWishlist('${p.id}')" class="w-7 h-7 rounded-full ${isSaved ? 'bg-navy-900 text-amber-400' : 'bg-white/90 text-navy-900'} flex items-center justify-center text-xs shadow-md">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button onclick="toggleComparison('${p.id}')" class="w-7 h-7 rounded-full ${isCompared ? 'bg-emerald-600 text-white' : 'bg-white/90 text-navy-900'} flex items-center justify-center text-xs shadow-md">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-5">
+                            <h3 class="font-extrabold text-navy-950 text-xs uppercase tracking-wide line-clamp-1">${p.title}</h3>
+                            <p class="text-[11px] text-slate-500 font-medium flex items-center gap-1 mt-1">
+                                <i class="fa-solid fa-location-dot text-[10px]"></i> ${p.location}
+                            </p>
+                            <p class="text-base font-extrabold text-navy-900 mt-2">${formatCurrency(p.priceINR)}</p>
+                        </div>
+                    </div>
+
+                    <div class="px-5 pb-5 pt-2 border-t border-slate-100 space-y-3">
+                        <div class="grid grid-cols-3 text-center text-slate-500 text-[10px] font-bold">
+                            <div><span class="block text-slate-400 font-normal">Extent</span>${p.dimension}</div>
+                            <div><span class="block text-slate-400 font-normal">Sq.Ft</span>${p.sqft.toLocaleString()}</div>
+                            <div><span class="block text-slate-400 font-normal">Type</span>${p.category.toUpperCase()}</div>
+                        </div>
+                        <button onclick="openShowcaseModal('${p.id}')" class="w-full py-2.5 rounded-full bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold uppercase tracking-wider shadow-sm">
+                            Inspect Property
+                        </button>
+                    </div>
+                </div>`;
+            });
+
+            // Map Pins Update
+            const mapLayer = document.getElementById('map-pins-layer');
+            mapLayer.innerHTML = '';
+            filtered.forEach((p, idx) => {
+                const topPos = 20 + (idx * 15) % 65;
+                const leftPos = 15 + (idx * 22) % 70;
+                mapLayer.innerHTML += `
+                <button onclick="openShowcaseModal('${p.id}')" style="top: ${topPos}%; left: ${leftPos}%;" class="absolute -translate-x-1/2 -translate-y-1/2 bg-white text-navy-950 font-extrabold text-[10px] px-3 py-1 rounded-full shadow-lg border border-navy-900 hover:scale-110 transition">
+                    <i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i>${formatCurrency(p.priceINR)}
+                </button>`;
+            });
+        }
+
+        function toggleWishlist(id) {
+            if(wishlist.includes(id)) {
+                wishlist = wishlist.filter(item => item !== id);
+                showToast("Removed from Saved Portfolio");
+            } else {
+                wishlist.push(id);
+                showToast("Saved to Private Portfolio");
+            }
+            document.getElementById('wishlist-counter').innerText = wishlist.length;
+            renderProperties();
+        }
+
+        function toggleComparison(id) {
+            if(comparisonList.includes(id)) {
+                comparisonList = comparisonList.filter(item => item !== id);
+                showToast("Removed from Comparison Matrix");
+            } else {
+                if(comparisonList.length >= 3) {
+                    showToast("Maximum 3 properties can be compared simultaneously");
+                    return;
+                }
+                comparisonList.push(id);
+                showToast("Added to Comparison Matrix");
+            }
+            const counter = document.getElementById('comparison-counter');
+            if(comparisonList.length > 0) {
+                counter.innerText = comparisonList.length;
+                counter.classList.remove('hidden');
+            } else {
+                counter.classList.add('hidden');
+            }
+            renderComparisonGrid();
+            renderProperties();
+        }
+
+        function toggleComparisonDrawer() {
+            document.getElementById('comparison-drawer').classList.toggle('hidden');
+        }
+
+        function renderComparisonGrid() {
+            const grid = document.getElementById('comparison-grid');
+            grid.innerHTML = '';
+            comparisonList.forEach(id => {
+                const p = PROPERTIES_DATA.find(item => item.id === id);
+                if(p) {
+                    grid.innerHTML += `
+                    <div class="bg-pageBg p-4 rounded-2xl border border-slate-200 relative">
+                        <button onclick="toggleComparison('${p.id}')" class="absolute top-3 right-3 text-slate-400 hover:text-navy-900"><i class="fa-solid fa-xmark"></i></button>
+                        <h4 class="font-extrabold text-xs text-navy-950 uppercase pr-4">${p.title}</h4>
+                        <div class="mt-2 text-[11px] font-bold text-slate-600 space-y-1">
+                            <p>Price: <span class="text-navy-900 font-extrabold">${formatCurrency(p.priceINR)}</span></p>
+                            <p>Dimension: ${p.dimension}</p>
+                            <p>Area: ${p.sqft.toLocaleString()} Sq.Ft</p>
+                        </div>
+                    </div>`;
+                }
+            });
+        }
+
+        function scrollToWishlist() {
+            scrollToSearch();
+            showToast(`Displaying ${wishlist.length} saved properties`);
+        }
+
+        function openShowcaseModal(id) {
+            activeModalPropId = id;
+            const p = PROPERTIES_DATA.find(item => item.id === id);
+            if(!p) return;
+
+            document.getElementById('m-approval').innerText = p.approval;
+            document.getElementById('m-title').innerText = p.title;
+            document.getElementById('m-loc').innerText = p.location;
+            document.getElementById('m-price').innerText = formatCurrency(p.priceINR);
+            document.getElementById('m-dim').innerText = p.dimension;
+            document.getElementById('m-area').innerText = `${p.sqft.toLocaleString()} Sq.Ft`;
+            document.getElementById('m-desc').innerText = p.description;
+            document.getElementById('m-img').src = p.image;
+
+            document.getElementById('m-wa').href = `https://wa.me/919036074011?text=Inquiring%20about%20${encodeURIComponent(p.title)}`;
+
+            document.getElementById('showcase-modal').classList.remove('hidden');
+        }
+
+        function switchMediaTab(tab) {
+            const btnPhoto = document.getElementById('mtab-photo');
+            const btnFloor = document.getElementById('mtab-floor');
+            const mediaPhoto = document.getElementById('mmedia-photo');
+            const mediaFloor = document.getElementById('mmedia-floor');
+
+            if(tab === 'photo') {
+                btnPhoto.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white";
+                btnFloor.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-iconBg text-navy-900";
+                mediaPhoto.classList.remove('hidden');
+                mediaFloor.classList.add('hidden');
+            } else {
+                btnFloor.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-navy-900 text-white";
+                btnPhoto.className = "px-4 py-1.5 rounded-full text-xs font-bold bg-iconBg text-navy-900";
+                mediaFloor.classList.remove('hidden');
+                mediaPhoto.classList.add('hidden');
+            }
+        }
+
+        function openVaultModal() {
+            document.getElementById('vault-modal').classList.remove('hidden');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+
+        function runAIValuation() {
+            const sqft = parseFloat(document.getElementById('ai-sqft').value);
+            const rate = parseFloat(document.getElementById('ai-loc').value);
+
+            document.getElementById('ai-sqft-val').innerText = `${sqft.toLocaleString()} Sq.Ft`;
+
+            const totalVal = sqft * rate;
+            const rentVal = Math.round(totalVal * 0.0005);
+
+            document.getElementById('ai-res-val').innerText = formatCurrency(totalVal);
+            document.getElementById('ai-res-rent').innerText = `₹ ${rentVal.toLocaleString()} / mo`;
+        }
+
+        function setCalcTab(tab) {
+            const tabs = document.querySelectorAll('.calc-tab');
+            const panels = document.querySelectorAll('.calc-panel');
+
+            tabs.forEach(t => t.className = "calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-iconBg text-slate-700 hover:text-navy-900");
+            panels.forEach(p => p.classList.add('hidden'));
+
+            document.getElementById(`calc-tab-${tab}`).className = "calc-tab px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider bg-navy-900 text-white";
+            document.getElementById(`calc-panel-${tab}`).classList.remove('hidden');
+        }
+
+        function runCalculations() {
+            const extent = parseFloat(document.getElementById('jd-extent').value);
+            const fsi = parseFloat(document.getElementById('jd-fsi').value);
+            const price = parseFloat(document.getElementById('jd-price').value);
+
+            document.getElementById('jd-extent-val').innerText = `${extent.toLocaleString()} Sq.Ft`;
+            document.getElementById('jd-fsi-val').innerText = fsi;
+            document.getElementById('jd-price-val').innerText = `₹ ${price.toLocaleString()}`;
+
+            const totalBuilt = extent * fsi;
+            const landownerRevenue = (totalBuilt * price) * 0.5;
+
+            document.getElementById('jd-res-gross').innerText = `₹ ${(landownerRevenue / 10000000).toFixed(2)} Crores`;
+            document.getElementById('jd-res-built').innerText = `${totalBuilt.toLocaleString()} Sq.Ft`;
+
+            const principal = parseFloat(document.getElementById('emi-principal').value);
+            const years = parseFloat(document.getElementById('emi-years').value);
+
+            document.getElementById('emi-principal-val').innerText = `₹ ${(principal / 10000000).toFixed(2)} Crore`;
+            document.getElementById('emi-years-val').innerText = `${years} Years`;
+
+            const r = 0.085 / 12;
+            const n = years * 12;
+            const emi = Math.round((principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1));
+
+            document.getElementById('emi-res-monthly').innerText = `₹ ${emi.toLocaleString()} / Mo`;
+            document.getElementById('emi-res-interest').innerText = `₹ ${Math.round((emi * n) - principal).toLocaleString()}`;
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('c-name').value;
+            const phone = document.getElementById('c-phone').value;
+            const date = document.getElementById('c-date').value;
+            const req = document.getElementById('c-req').value;
+            const notes = document.getElementById('c-notes').value;
+
+            showToast("Consultation Request Logged! Opening WhatsApp...");
+
+            const text = `*New Private Consultation Request*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Preferred Visit Date:* ${encodeURIComponent(date)}%0A*Requirement:* ${encodeURIComponent(req)}%0A*Notes:* ${encodeURIComponent(notes)}`;
+            
+            setTimeout(() => {
+                window.open(`https://wa.me/919036074011?text=${text}`, '_blank');
+            }, 800);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProperties();
+            runAIValuation();
+            runCalculations();
+        });
+    </script>
+</body>
+</html>
